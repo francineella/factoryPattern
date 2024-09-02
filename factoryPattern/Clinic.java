@@ -9,6 +9,7 @@ public class Clinic {
 
         System.out.println("[1] Dog");
         System.out.println("[2] Cat");
+        System.out.println("[3] Exit");
         System.out.print("\nChoose your pet number: ");
         Integer choice = input.nextInt();
 
@@ -27,6 +28,9 @@ public class Clinic {
                 petFile.setPetName("Muning");
                 petFile.setPet(pet);
                 ((Cat) pet).setNoOfLives(9);
+            case 3: 
+                break;
+            default pet = "Invalid Code";
         }
 
         System.out.println("Pet id is " + petFile.getPetId());
